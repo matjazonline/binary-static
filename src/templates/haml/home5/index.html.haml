@@ -9,7 +9,7 @@
   .static_full .section:not(:first-child){padding:0 0;}
   .section h1{margin-top:60px;}
   .section:last-child h1{margin-top:10px;}
-  .acc-input label{margin-top:10px;font-size:1em;}
+  .acc-input label{margin-top:6px;font-size:0.9em;}
   .acc-input input{font-size:1.2em;}
   .home-content #open-account #virtual-fields .acc-input {margin:3px 0;}
   #virtual-acc-form input.button{font-size:1.4em;width:100%;}
@@ -98,7 +98,7 @@
     width: 100%;
     cursor:pointer;
     margin:0px;
-    margin-top:17px;
+    margin-top:29px;
     }
     .home-content #open-account #virtual-fields input, .home-content #open-account #virtual-fields select, .home-content #open-account #virtual-fields textarea{
       border-radius:0px;
@@ -106,13 +106,17 @@
     .home-content #open-account .input-button:hover {
       background: #2a3052;
       border: solid 2px #fff;
-      margin-top: -2px !important;
-      margin-bottom: -2px !important;
+      margin-top: 3px !important;
+      margin-bottom: 3px !important;
     }
     .home-content #open-account .open-account-sub-text{
       font-size:0.7em;
       display: inline-block;
       margin-top: 10px;
+      }
+      .fixed-h-input{
+        height: 40px;
+        overflow: hidden;
       }
 .home-content.paragraph-style
   #banner.section-margin{:style=>'background-position-y: 68%;background-position-x: -272px;'}
@@ -171,7 +175,7 @@
                 %span#virtual-fields
                   %span.acc-input{:style=>'margin:0px 0 0 0'}
                     %label.grd-grid-12.grd-grid-phablet-12.grd-grid-tablet-12.grd-grid-mobile-12{:for => 'Email',:style=>'padding:0;margin-top:0px;text-align: center;padding-right: 0px;'}= l('Your Email:')
-                    %span.grd-grid-12.grd-no-gutter.grd-no-gutter.grd-grid-phablet-12.grd-grid-tablet-12.grd-grid-mobile-12{:style=>'height:40px;overflow:hidden;'}
+                    %span.grd-grid-12.grd-no-gutter.grd-no-gutter.grd-grid-phablet-12.grd-grid-tablet-12.grd-grid-mobile-12.fixed-h-input{:style=>'height:40px;overflow:hidden;'}
                       %input.import-fb-email-field.grd-grid-10{:name => 'Email', :id => 'Email', :type => 'email', :required => true, :placeholder=>'your email here':style=>'width:83.33333%;text-align: left;'}
                       .import-fb-email-btn.grd-grid-2{:title=>'Import Your Email From Facebook',:style=>'cursor:pointer; background:#3b5998;height:100%;'}
                         %img{:src=>url_for('images/pages/home5/facebook-letter.svg'),:style=>'max-height: 100%;max-width: 100%;margin-top: 3px;'}
