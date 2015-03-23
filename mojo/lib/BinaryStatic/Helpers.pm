@@ -266,7 +266,7 @@ sub _main_menu_myaccount {
     push @{$my_account_ref->{sub_items}},
       {
         id         => 'topMenuStatement',
-        url        => $self->c->url_for('/statement.cgi'),
+        url        => $self->c->url_for('/user/statement'),
         text       => $self->c->l('Statement'),
         link_class => 'with_login_cookies pjaxload',
       };
@@ -291,7 +291,7 @@ sub _main_menu_myaccount {
     push @{$my_account_ref->{sub_items}},
       {
         id   => 'topMenuBecomeAffiliate',
-        url  => $self->c->url_for('/affiliate_signup.cgi'),
+        url  => $self->c->url_for('/affiliate/signup'),
         text => $self->c->l('Affiliate'),
       };
 
@@ -312,7 +312,7 @@ sub _main_menu_cashier {
 
     my $cashier_items_ref = {
         id         => 'topMenuCashier',
-        url        => $self->c->url_for('/available_payment_methods.cgi'),
+        url        => $self->c->url_for('/cashier/available_payment_methods'),
         text       => $self->c->l('Cashier'),
         link_class => 'pjaxload',
     };
